@@ -46,6 +46,7 @@ Rails.application.configure do
 			access_key_id: ENV["aws_access_key_id"],
 			secret_access_key: ENV["aws_secret_access_key"],
 		},
-		:s3_region => 'us-west-2'
+		:s3_region => 'us-west-2',
+		:s3_protocol => :https
 	}
 end
